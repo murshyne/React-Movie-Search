@@ -12,6 +12,8 @@ export default function Form(props) {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
+
+  
   const handleSubmit = (event) => {
     // Prevent page from refreshing on form submission
     event.preventDefault();
