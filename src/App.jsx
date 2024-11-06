@@ -7,7 +7,7 @@ import Form from "./components/Form";
 
 export default function App() {
   // Constant with your API Key
-  const apiKey = "98e3fb1f";
+  const apiKey = "d9efcee";
 
   // State to hold movie data
   const [movie, setMovie] = useState(null);
