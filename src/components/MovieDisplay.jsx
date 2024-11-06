@@ -2,13 +2,26 @@ export default function MovieDisplay({ movie }) {
   // Function to return loaded JSX
   const loaded = () => {
     return (
-      <>
-        <h1>{movie.Title}</h1>
-        <h2>{movie.Genre}</h2>
+      <div>
+        <h1>Movie Title : {movie.Title}</h1>
+        <p>{movie.Plot}</p>
+        <h2>
+          {movie.Genre} &nbsp; {movie.Year}
+        </h2>
         <img src={movie.Poster} alt={movie.Title} />
-        <h2>{movie.Year}</h2>
-        
-      </>
+
+        {/* ratings */}
+        {movie.Ratings && movie.Ratings.length > 0 && (
+          <div>
+            <h3>Ratings:</h3>
+            {movie.Ratings.map((rating, index) => (
+              <p key={index}>
+                {rating.Source}: {rating.Value}
+              </p>
+            ))}
+          </div>
+        )}
+      </div>
     );
   };
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 export default function Form({ moviesearch }) {
   // State to hold the data of our form
   const [formData, setFormData] = useState({

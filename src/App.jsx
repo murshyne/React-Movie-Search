@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-
 import MovieDisplay from "./components/MovieDisplay";
 import Form from "./components/Form";
 
 export default function App() {
-  // API Key
   const apiKey = "98e3fb1f";
+  
 
   // State to hold movie data
   const [movie, setMovie] = useState(null);
-  const [error, setError] = useState(null); // To store any error messages
+
+  // To store any error messages
+  const [error, setError] = useState(null);
 
   // Function to fetch the movie data
   const getMovie = async (searchTerm) => {
