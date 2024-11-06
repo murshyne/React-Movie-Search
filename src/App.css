@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+/* =================================== */
+.star-rating {
+  font-size: 2rem; /* Adjust the size of the stars */
+}
+
+.star {
+  color: #ccc; /* Default color for empty stars */
+}
+
+.star.filled {
+  color: #ff0000; /* Red color for filled stars */
+}
