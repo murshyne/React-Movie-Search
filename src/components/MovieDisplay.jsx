@@ -45,14 +45,6 @@ export default function MovieDisplay({ movie }) {
       <div>
         <h2>Movie Title: {movie.Title}</h2>
 
-        {/* Display MPAA Rating (e.g., PG, PG-13, etc.) */}
-        {movie.Rated && (
-          <div>
-            <strong>
-              <em>{movie.Rated}</em>
-            </strong>
-          </div>
-        )}
 
         <p>{movie.Plot}</p>
         <img src={movie.Poster} alt={movie.Title} />
