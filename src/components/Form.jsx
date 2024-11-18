@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-export default function Form({ moviesearch }) {
+export default function Form({ movieSearch }) {
   // State to hold the data of our form
   const [formData, setFormData] = useState({
-    searchterm: "",
+    searchTerm: "",
   });
 
   // handleChange - updates formData when we type into form
@@ -16,8 +16,8 @@ export default function Form({ moviesearch }) {
   const handleSubmit = (event) => {
     // Prevent page from refreshing on form submission
     event.preventDefault();
-    // Pass the search term to moviesearch prop, which is App's getMovie function
-    moviesearch(formData.searchterm);
+    // Pass the search term to movieSearch prop, which is App's getMovie function
+    movieSearch(formData.searchTerm);
   };
 
   return (
@@ -25,9 +25,9 @@ export default function Form({ moviesearch }) {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="searchterm"
+          name="searchTerm"
           onChange={handleChange}
-          value={formData.searchterm}
+          value={formData.searchTerm}
         />
         <input type="submit" value="submit" />
       </form>

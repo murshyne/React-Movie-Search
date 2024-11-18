@@ -43,11 +43,14 @@ export default function MovieDisplay({ movie }) {
   const loaded = () => {
     return (
       <div>
-        <h2>Movie Title: {movie.Title}</h2>
+        <br />
+        <br />
 
 
-        <p>{movie.Plot}</p>
+        
         <img src={movie.Poster} alt={movie.Title} />
+        <h2>Movie Title: {movie.Title}</h2>
+        <p>{movie.Plot}</p>
         <h2>
           {movie.Genre} &nbsp; {movie.Year}
         </h2>
@@ -87,7 +90,7 @@ export default function MovieDisplay({ movie }) {
 
   // Function to return loading JSX
   const loading = () => {
-    return <h1>No Movie to Display</h1>;
+    return <h1>Select Movie to Display</h1>;
   };
 
   return movie ? loaded() : loading();
