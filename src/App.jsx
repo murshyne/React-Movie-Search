@@ -4,7 +4,7 @@ import MovieDisplay from "./components/MovieDisplay";
 import Form from "./components/Form";
 
 export default function App() {
-  const apiKey = import.meta.env.VITE_API_KEY; // OMDb API key
+  const apiKey = import.meta.env.VITE_API_KEY;
   
   // State to hold the selected movie data (clicked from the grid)
   const [movie, setMovie] = useState(null);
