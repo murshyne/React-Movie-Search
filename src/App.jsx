@@ -4,7 +4,7 @@ import MovieDisplay from "./components/MovieDisplay";
 import Form from "./components/Form";
 
 export default function App() {
-  const apiKey = "98e3fb1f";
+  const apiKey = import.meta.env.VITE_API_KEY;
   
 
   // State to hold movie data
